@@ -84,8 +84,9 @@ return packer.startup(function(use)
   use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
 
   -- Telescope
-  use "nvim-telescope/telescope.nvim"
-
+  use 'nvim-telescope/telescope.nvim'
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+  
   -- Treesitter
   -- For syntax highlighting
   use {
