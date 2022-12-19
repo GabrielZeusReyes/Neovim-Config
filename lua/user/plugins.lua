@@ -51,8 +51,14 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- Status bar 
   use "lukas-reineke/indent-blankline.nvim"
 
-  -- Buffer lines
+  -- Winbar Plugins 
   use "akinsho/bufferline.nvim"
+  use {
+    "utilyre/barbecue.nvim",
+    config = function()
+      require("barbecue").setup()
+    end,
+  }
   use "moll/vim-bbye"
 
   -- Navigation/Breadcrumbs
