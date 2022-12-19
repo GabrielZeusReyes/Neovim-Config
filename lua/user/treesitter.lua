@@ -11,6 +11,12 @@ configs.setup {
     disable = { "" }, -- list of language that will be disabled
     additional_vim_regex_highlighting = true,
   },
+  refactor = {
+    highlight_definitions = {
+      enable = true,
+      clear_on_currsor_move = true,
+    },
+  },
   indent = { enable = true, disable = { "yaml" } },  rainbow = {
     enable = true,
     -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
