@@ -1,0 +1,18 @@
+npm
+node
+chocolatey
+wget
+pwsh - Powershell (no not windows powershell)
+prettier
+stylua - @johnnymorganz/stylua-bin
+***REMOVE - pyscript and black or anything related to python
+git
+nerd fonts
+windows terminal
+rigrep - through chocolatey
+scoop
+zig
+lazygit
+typescript typescript-language-server
+enable transparent 
+(https://zimmergren.net/enable-transparent-background-in-windows-terminal/)

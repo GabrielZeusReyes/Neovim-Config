@@ -1,0 +1,7 @@
+1. Enable Find and Replace across multiple files (fzf telescope quickfix list)
+2. Emmet - done
+3. Color showing in CSS files, maybe color picker as well if possible??
+4. Setup Github repo for this config files, maybe I can use this in the future?? IDK IMAGINE
+5. Lazygit 
+6. Grid lines
+7. Find out how to exclude node_modules in Telescope?
