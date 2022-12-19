@@ -5,3 +5,4 @@
 5. Lazygit 
 6. Grid lines
 7. Find out how to exclude node_modules in Telescope?
+8. Add a proper readme.md and a keybinding maybe?
