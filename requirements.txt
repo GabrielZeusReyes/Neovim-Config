@@ -13,6 +13,7 @@ rigrep - through chocolatey
 scoop
 zig
 lazygit
+cmake - direct install then add to PATH the bin folder, or maybe install it through chocolatey?
 typescript typescript-language-server
 enable transparent 
 (https://zimmergren.net/enable-transparent-background-in-windows-terminal/)
