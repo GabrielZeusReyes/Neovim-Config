@@ -49,6 +49,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua' -- Replace netrw
   use 'akinsho/toggleterm.nvim' -- Toggle a terminal
   use 'nvim-lualine/lualine.nvim' -- Status bar 
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- Buffer lines
   use "akinsho/bufferline.nvim"
