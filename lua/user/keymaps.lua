@@ -82,7 +82,8 @@ keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", {noremap = true, sile
 keymap("n", "<leader>f",
   "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
   opts)
-keymap("n", "<leader><S-f>", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader><S-f>", "<cmd>Telescope live_grep<CR>", opts)
+keymap("n", "<leader>p", "<cmd>Telescope projects<CR>", opts)
 
 -- Styling/Linting --
 keymap("n", "<leader>s", "<cmd>Format<cr>", opts)

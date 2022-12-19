@@ -50,6 +50,7 @@ return packer.startup(function(use)
   use 'akinsho/toggleterm.nvim' -- Toggle a terminal
   use 'nvim-lualine/lualine.nvim' -- Status bar 
   use "lukas-reineke/indent-blankline.nvim"
+  use "ahmedkhalf/project.nvim"
 
   -- Winbar Plugins 
   use "akinsho/bufferline.nvim"
