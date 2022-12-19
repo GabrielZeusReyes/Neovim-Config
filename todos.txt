@@ -7,3 +7,4 @@
 7. Find out how to exclude node_modules in Telescope?
 8. Add a proper readme.md and a keybinding maybe?
 9. Gitblame??
+10. https://github.com/mrjones2014/legendary.nvim - maybe use this for formatting our keybindings??
