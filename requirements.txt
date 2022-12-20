@@ -17,3 +17,4 @@ cmake - direct install then add to PATH the bin folder, or maybe install it thro
 typescript typescript-language-server
 enable transparent 
 (https://zimmergren.net/enable-transparent-background-in-windows-terminal/)
+eslint through npm global
