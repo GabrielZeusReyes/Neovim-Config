@@ -24,10 +24,9 @@ Ubuntu:
 
 1. nvm
 2. git
-3. neovim
+3. neovim - make this updated or more than v7
 4. git clone https://github.com/GabrielZeusReyes/Neovim-Config.git ~/.config/nvim
 5. fix the winbar in optioons
 6. install ripgrep https://github.com/BurntSushi/ripgrep#installation
 7. sudo apt install build-essential
-8. Install cmake
-uninstall cmake and fzf
+8. Install unzip
