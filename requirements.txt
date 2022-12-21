@@ -18,3 +18,16 @@ typescript typescript-language-server
 enable transparent 
 (https://zimmergren.net/enable-transparent-background-in-windows-terminal/)
 eslint through npm global
+
+
+Ubuntu:
+
+1. nvm
+2. git
+3. neovim
+4. git clone https://github.com/GabrielZeusReyes/Neovim-Config.git ~/.config/nvim
+5. fix the winbar in optioons
+6. install ripgrep https://github.com/BurntSushi/ripgrep#installation
+7. sudo apt install build-essential
+8. Install cmake
+uninstall cmake and fzf
