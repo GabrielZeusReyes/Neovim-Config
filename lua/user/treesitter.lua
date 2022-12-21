@@ -31,4 +31,4 @@ configs.setup {
   }
 }
 
-configs.compilers = { 'zig' }
+configs.compilers = { 'gcc' }
