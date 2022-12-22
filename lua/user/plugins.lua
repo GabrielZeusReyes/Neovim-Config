@@ -49,7 +49,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua' -- Replace netrw
   use 'akinsho/toggleterm.nvim' -- Toggle a terminal
   use 'nvim-lualine/lualine.nvim' -- Status bar 
-  use "lukas-reineke/indent-blankline.nvim" -- Indent Line
+  --[[ use "lukas-reineke/indent-blankline.nvim" -- Indent Line ]]
   use "ahmedkhalf/project.nvim"
 
   -- Winbar Plugins 
@@ -116,6 +116,9 @@ return packer.startup(function(use)
       require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
     end
   }
+
+  -- Smooth Scrolling
+  use 'karb94/neoscroll.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
