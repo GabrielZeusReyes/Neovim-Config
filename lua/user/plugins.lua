@@ -49,7 +49,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua' -- Replace netrw
   use 'akinsho/toggleterm.nvim' -- Toggle a terminal
   use 'nvim-lualine/lualine.nvim' -- Status bar 
-  use "lukas-reineke/indent-blankline.nvim"
+  use "lukas-reineke/indent-blankline.nvim" -- Indent Line
   use "ahmedkhalf/project.nvim"
 
   -- Winbar Plugins 
@@ -67,7 +67,7 @@ return packer.startup(function(use)
 
 
   -- Color Schemes
-  use "sainnhe/everforest"
+  use "EdenEast/nightfox.nvim"
 
   -- Completion plugins
   -- Note: If you're adding new cmp plugins, don't forget to update the 'sources' object from 'cmp.lua' file
