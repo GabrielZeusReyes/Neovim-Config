@@ -54,6 +54,7 @@ return packer.startup(function(use)
 
   -- Winbar Plugins 
   use "akinsho/bufferline.nvim"
+  --[[ use "romgrk/barbar.nvim" ]]
   use {
     "utilyre/barbecue.nvim",
     config = function()

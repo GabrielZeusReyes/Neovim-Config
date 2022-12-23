@@ -44,6 +44,7 @@ keymap("n", "<leader><leader>o", ":HopChar2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-w>", ":Bdelete!<CR>", opts)
+--[[ keymap("n", "<A-w>", ":BufferClose<CR>", opts) ]]
 
 -- Insert --
 -- Press jk fast to enter
