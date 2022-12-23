@@ -95,25 +95,31 @@ dashboard.custom_center = {
     icon = '  ',
     desc = 'Recent projects                         ',
     action = 'Telescope projects',
-    shortcut = 'SPC p'
+    shortcut = '<space> p'
   },
   {
     icon = '  ',
     desc = 'Find files                              ',
     action = 'Telescope find_files find_command=rg,--hidden,--files',
-    shortcut = 'SPC f'
+    shortcut = '<space> f'
   },
   {
     icon = '  ',
     desc = 'Find keywords                           ',
     action = 'Telescope live_grep',
-    shortcut = 'SPC F'
+    shortcut = '<space> F'
   },
   {
     icon = 'פּ  ',
     desc = 'Open file tree                          ',
     action = 'NvimTreeToggle',
-    shortcut = 'SPC e'
+    shortcut = '<space> e'
+  },
+  {
+    icon = '  ',
+    desc = 'Quit                                           ',
+    action = 'q',
+    shortcut = ':q'
   }
 }
 
