@@ -120,6 +120,9 @@ return packer.startup(function(use)
   -- Smooth Scrolling
   use 'karb94/neoscroll.nvim'
 
+  -- Startup screen
+  use 'glepnir/dashboard-nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
