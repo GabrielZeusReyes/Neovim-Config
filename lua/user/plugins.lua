@@ -51,15 +51,10 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- Status bar 
   --[[ use "lukas-reineke/indent-blankline.nvim" -- Indent Line ]]
   use "ahmedkhalf/project.nvim"
+  use 'norcalli/nvim-colorizer.lua'
 
   -- Winbar Plugins 
-  use({
-    "utilyre/barbecue.nvim",
-    config = function()
-      require("barbecue").setup()
-    end,
-  })
-  use "akinsho/bufferline.nvim"
+  --[[ use "akinsho/bufferline.nvim" ]]
   use "moll/vim-bbye"
 
   -- Navigation/Breadcrumbs
@@ -67,7 +62,7 @@ return packer.startup(function(use)
 
 
   -- Color Schemes
-  use "EdenEast/nightfox.nvim"
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- Completion plugins
   -- Note: If you're adding new cmp plugins, don't forget to update the 'sources' object from 'cmp.lua' file
@@ -122,7 +117,6 @@ return packer.startup(function(use)
 
   -- Startup screen
   use 'glepnir/dashboard-nvim'
-
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
