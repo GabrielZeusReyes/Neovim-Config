@@ -1,15 +1,13 @@
-local ok_status, nightfox = pcall(require, "nightfox")
+local ok_status, catppuccin = pcall(require, "catppuccin")
 if not ok_status then
   return
 end
 
-nightfox.setup {
-  options = {
-    transparent = true
-  }
+catppuccin.setup {
+  transparent_background = true
 }
 
-local colorscheme = "carbonfox"
+local colorscheme = "catppuccin-mocha"
 
 local status_ok,_ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
