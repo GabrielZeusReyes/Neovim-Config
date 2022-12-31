@@ -53,14 +53,13 @@ return packer.startup(function(use)
   use "ahmedkhalf/project.nvim"
 
   -- Winbar Plugins 
-  use "akinsho/bufferline.nvim"
-  --[[ use "romgrk/barbar.nvim" ]]
-  use {
+  use({
     "utilyre/barbecue.nvim",
     config = function()
       require("barbecue").setup()
     end,
-  }
+  })
+  use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
 
   -- Navigation/Breadcrumbs
