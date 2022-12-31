@@ -26,9 +26,10 @@ local diff = {
 
 local mode = {
 	"mode",
-	fmt = function(str)
-		return "-- " .. str .. " --"
-	end,
+	--[[ fmt = function(str) ]]
+	--[[ 	return "-- " .. str .. " --" ]]
+	--[[ end, ]]
+  separator = { right = "" }
 }
 
 local filetype = {
@@ -41,11 +42,13 @@ local branch = {
 	"branch",
 	icons_enabled = true,
 	icon = "",
+  separator = { left = "" }
 }
 
 local location = {
 	"location",
 	padding = 0,
+  separator = { left = "" }
 }
 
 -- cool function for progress
@@ -78,7 +81,7 @@ lualine.setup({
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { diff, spaces, "encoding", filetype },
 		lualine_y = { location },
-		lualine_z = { progress },
+		lualine_z = { { progress, separator = { right = "" } } },
 	},
 	inactive_sections = {
 		lualine_a = {},
@@ -88,6 +91,14 @@ lualine.setup({
 		lualine_y = {},
 		lualine_z = {},
 	},
-	tabline = {},
-	extensions = {},
+	tabline = {
+    lualine_a = {
+			{
+				"buffers",
+				separator = { left = "", right = "" },
+				right_padding = 2,
+				symbols = { alternate_file = "" },
+			},
+		},
+  },
 })
