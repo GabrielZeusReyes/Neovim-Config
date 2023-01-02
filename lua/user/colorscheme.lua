@@ -1,13 +1,17 @@
-local ok_status, catppuccin = pcall(require, "catppuccin")
+local ok_status, tokyonight = pcall(require, "tokyonight")
 if not ok_status then
   return
 end
 
-catppuccin.setup {
-  transparent_background = true
+tokyonight.setup {
+  transparent = true,
+  styles = {
+     sidebars = "transparent",
+     floats = "transparent",
+  }
 }
 
-local colorscheme = "catppuccin-mocha"
+local colorscheme = "tokyonight-moon"
 
 local status_ok,_ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
