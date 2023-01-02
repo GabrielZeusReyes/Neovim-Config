@@ -65,10 +65,54 @@ local spaces = function()
 	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
 
+-- colors *from tokyonight
+local colors = {
+  darkgray = "#16161d", -- font color of the github name
+  gray = "#cfc9c2", -- font color of other texts
+  innerbg = nil, -- make the bg transparent
+  outerbg = "#414868", -- bg color of the container for MODE and LOCATION
+  normal = "#73daca",
+  insert = "#bb9af7",
+  visual = "#ffa066",
+  replace = "#e46876",
+  command = "#9ece6a",
+}
+
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = "auto",
+    theme = {
+      inactive = {
+        a = { fg = colors.gray, bg = colors.outerbg, gui = "bold" },
+        b = { fg = colors.gray, bg = colors.outerbg },
+        c = { fg = colors.gray, bg = colors.innerbg },
+      },
+      visual = {
+        a = { fg = colors.darkgray, bg = colors.visual, gui = "bold" },
+        b = { fg = colors.gray, bg = colors.outerbg },
+        c = { fg = colors.gray, bg = colors.innerbg },
+      },
+      replace = {
+        a = { fg = colors.darkgray, bg = colors.replace, gui = "bold" },
+        b = { fg = colors.gray, bg = colors.outerbg },
+        c = { fg = colors.gray, bg = colors.innerbg },
+      },
+      normal = {
+        a = { fg = colors.darkgray, bg = colors.normal, gui = "bold" },
+        b = { fg = colors.gray, bg = colors.outerbg },
+        c = { fg = colors.gray, bg = colors.innerbg },
+      },
+      insert = {
+        a = { fg = colors.darkgray, bg = colors.insert, gui = "bold" },
+        b = { fg = colors.gray, bg = colors.outerbg },
+        c = { fg = colors.gray, bg = colors.innerbg },
+      },
+      command = {
+        a = { fg = colors.darkgray, bg = colors.command, gui = "bold" },
+        b = { fg = colors.gray, bg = colors.outerbg },
+        c = { fg = colors.gray, bg = colors.innerbg },
+      },
+    },
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = { "dashboard", "NvimTree", "Outline" },
