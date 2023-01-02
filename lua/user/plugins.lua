@@ -62,7 +62,7 @@ return packer.startup(function(use)
 
 
   -- Color Schemes
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use "folke/tokyonight.nvim"
 
   -- Completion plugins
   -- Note: If you're adding new cmp plugins, don't forget to update the 'sources' object from 'cmp.lua' file
