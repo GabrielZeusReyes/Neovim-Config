@@ -10,7 +10,8 @@ end
 local diagnostics = {
 	"diagnostics",
 	sources = { "nvim_diagnostic" },
-	sections = { "error", "warn" },
+  separator = { right = "" },
+  sections = { "error", "warn" },
 	symbols = { error = " ", warn = " " },
 	colored = false,
 	update_in_insert = false,
@@ -29,8 +30,10 @@ local mode = {
 	--[[ fmt = function(str) ]]
 	--[[ 	return "-- " .. str .. " --" ]]
 	--[[ end, ]]
-  separator = { right = "" }
+  separator = { right = "" },
+	padding = { left = 2 },
 }
+-- '' '' '' '' '' '' '' '' 
 
 local filetype = {
 	"filetype",
@@ -47,7 +50,7 @@ local branch = {
 
 local location = {
 	"location",
-	padding = 0,
+	padding = { left = 0, right = 2 },
   separator = { left = "" }
 }
 
@@ -125,7 +128,7 @@ lualine.setup({
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { diff, spaces, "encoding", filetype },
 		lualine_y = { location },
-		lualine_z = { { progress, separator = { right = "" } } },
+		lualine_z = { { progress, separator = { left = "", right = "" } } }
 	},
 	inactive_sections = {
 		lualine_a = {},
