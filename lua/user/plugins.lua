@@ -95,7 +95,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
-  use "p00f/nvim-ts-rainbow"
+  use "p00f/nvim-ts-rainbow" -- NOTE: this is now archived and not being maintained
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'nvim-treesitter/nvim-treesitter-refactor'
 
