@@ -51,7 +51,7 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- Status bar 
   --[[ use "lukas-reineke/indent-blankline.nvim" -- Indent Line ]]
   use "ahmedkhalf/project.nvim"
-  use 'norcalli/nvim-colorizer.lua'
+  use "norcalli/nvim-colorizer.lua"
   use {"kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async"} -- Folding/Unfolding code blocks
   use({
       "kylechui/nvim-surround", -- Add/Edit/Delete surrounding pairs
