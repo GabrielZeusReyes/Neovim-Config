@@ -87,10 +87,11 @@ keymap("n", "<leader><S-f>", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<leader>p", "<cmd>Telescope projects<CR>", opts)
 
 -- Styling/Linting --
-keymap("n", "<leader>s", "<cmd>Format<cr>", opts)
+keymap("n", "<leader>sl", "<cmd>Format<cr>", opts) -- format code
 
 -- Open a new file
 keymap("n", "<C-n>", "<cmd>:enew<cr>", opts)
+
 -- Spectre Seach/Replace
 keymap("n", "<leader><S-s>", "<cmd>lua require('spectre').open()<CR>", opts)
 keymap("v", "<leader>s", "<esc>:lua require('spectre').open_visual()<CR>", opts)
