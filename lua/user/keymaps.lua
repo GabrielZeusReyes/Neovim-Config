@@ -88,3 +88,6 @@ keymap("n", "<leader>p", "<cmd>Telescope projects<CR>", opts)
 
 -- Styling/Linting --
 keymap("n", "<leader>s", "<cmd>Format<cr>", opts)
+
+-- Open a new file
+keymap("n", "<C-n>", "<cmd>:enew<cr>", opts)
