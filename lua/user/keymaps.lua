@@ -91,3 +91,6 @@ keymap("n", "<leader>s", "<cmd>Format<cr>", opts)
 
 -- Open a new file
 keymap("n", "<C-n>", "<cmd>:enew<cr>", opts)
+-- Spectre Seach/Replace
+keymap("n", "<leader><S-s>", "<cmd>lua require('spectre').open()<CR>", opts)
+keymap("v", "<leader>s", "<esc>:lua require('spectre').open_visual()<CR>", opts)

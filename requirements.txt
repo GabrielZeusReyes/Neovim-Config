@@ -30,3 +30,4 @@ Ubuntu:
 6. install ripgrep https://github.com/BurntSushi/ripgrep#installation
 7. sudo apt install build-essential
 8. Install unzip
+9. sed
