@@ -52,6 +52,15 @@ return packer.startup(function(use)
   --[[ use "lukas-reineke/indent-blankline.nvim" -- Indent Line ]]
   use "ahmedkhalf/project.nvim"
   use 'norcalli/nvim-colorizer.lua'
+  use({
+      "kylechui/nvim-surround", -- Add/Edit/Delete surrounding pairs
+      tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+      config = function()
+          require("nvim-surround").setup({
+              -- Configuration here, or leave empty to use defaults
+          })
+      end
+  })
 
   -- Winbar Plugins 
   --[[ use "akinsho/bufferline.nvim" ]]
