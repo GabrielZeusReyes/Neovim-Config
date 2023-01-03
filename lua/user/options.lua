@@ -41,6 +41,10 @@ local options = {
   shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
   shellquote = "",
   shellxquote = "",
+  foldcolumn = '0', -- Set to '1' or more to show the icons on the right side 
+  foldlevel = 99, -- Using ufo provider need a large value, feel free to decrease the value
+  foldlevelstart = -1,
+  foldenable = true,
 }
 
 vim.opt.shortmess:append "c"
