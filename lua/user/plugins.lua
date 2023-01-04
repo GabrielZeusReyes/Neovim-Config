@@ -70,6 +70,7 @@ return packer.startup(function(use)
 
   -- Navigation/Breadcrumbs
   use "SmiteshP/nvim-navic"
+  use "utilyre/barbecue.nvim"
 
 
   -- Color Schemes
