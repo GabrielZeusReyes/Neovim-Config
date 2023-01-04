@@ -139,7 +139,7 @@ lualine.setup({
 		lualine_z = {},
 	},
 	tabline = {
-    lualine_a = {
+    lualine_z = {
 			{
 				"buffers",
 				separator = { left = "", right = "" },
