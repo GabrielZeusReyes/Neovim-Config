@@ -64,6 +64,7 @@ return packer.startup(function(use)
       end
   })
   use "nvim-pack/nvim-spectre"
+  use "gelguy/wilder.nvim"
 
   -- Winbar Plugins 
   --[[ use "akinsho/bufferline.nvim" ]]
