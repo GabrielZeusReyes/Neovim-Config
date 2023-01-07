@@ -6,6 +6,13 @@ configs.setup {
   autopairs = {
 		enable = true,
 	},
+  autotag = {
+    enable = true,
+    filetypes = {
+      'html', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'svelte', 'vue', 'tsx', 'jsx', 'rescript',
+      'css', 'lua', 'xml', 'php', 'markdown'
+    },
+  },
   highlight = {
     enable = true, -- false will disable the whole extension
     disable = { "" }, -- list of language that will be disabled
