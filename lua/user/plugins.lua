@@ -110,6 +110,7 @@ return packer.startup(function(use)
   use "p00f/nvim-ts-rainbow" -- NOTE: this is now archived and not being maintained
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'nvim-treesitter/nvim-treesitter-refactor'
+  use 'nvim-treesitter/nvim-treesitter-textobjects'
 
   -- Git
   use "lewis6991/gitsigns.nvim"
