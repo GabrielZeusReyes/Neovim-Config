@@ -133,6 +133,11 @@ return packer.startup(function(use)
 
   -- Startup screen
   use 'glepnir/dashboard-nvim'
+
+  -- Keybindings Guide
+  use "stevearc/dressing.nvim" -- prerequisite 
+  use "mrjones2014/legendary.nvim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

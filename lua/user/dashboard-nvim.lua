@@ -140,6 +140,12 @@ dashboard.custom_center = {
     shortcut = '<space> e'
   },
   {
+    icon = '  ',
+    desc = 'Keymap shortcuts                        ',
+    action = 'Legendary keymaps',
+    shortcut = '<space> '
+  },
+  {
     icon = '  ',
     desc = 'Quit                                           ',
     action = 'q',

@@ -100,3 +100,6 @@ keymap("n", "<C-n>", "<cmd>:enew<cr>", opts)
 -- Spectre Seach/Replace
 keymap("n", "<leader><S-s>", "<cmd>lua require('spectre').open()<CR>", opts)
 keymap("v", "<leader>s", "<esc>:lua require('spectre').open_visual()<CR>", opts)
+
+-- Legendary
+keymap("n", "<leader>?", "<cmd>Legendary keymaps<CR>", opts)
