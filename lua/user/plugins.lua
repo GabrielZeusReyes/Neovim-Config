@@ -50,7 +50,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua' -- Replace netrw
   use 'akinsho/toggleterm.nvim' -- Toggle a terminal
   use 'nvim-lualine/lualine.nvim' -- Status bar 
-  --[[ use "lukas-reineke/indent-blankline.nvim" -- Indent Line ]]
+  -- use "lukas-reineke/indent-blankline.nvim" -- Indent Line
   use "ahmedkhalf/project.nvim"
   use "norcalli/nvim-colorizer.lua"
   use {"kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async"} -- Folding/Unfolding code blocks
@@ -63,8 +63,8 @@ return packer.startup(function(use)
           })
       end
   })
-  use "nvim-pack/nvim-spectre"
-  use "gelguy/wilder.nvim"
+  use "nvim-pack/nvim-spectre" -- find and replace across files
+  use "gelguy/wilder.nvim" -- cmdline enhancements
 
   -- Winbar Plugins 
   --[[ use "akinsho/bufferline.nvim" ]]
