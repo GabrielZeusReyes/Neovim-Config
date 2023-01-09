@@ -86,16 +86,28 @@ local keymaps = {
     mode = { 'i' }
   }, {
     "<leader>g",
-    description = "Opens Lazygit"
+    description = "Open Fugitive"
   }, {
-    "<leader>dh",
+    "<leader>gm",
+    description = "Open Merge conflict window"
+  },{
+    "d2o",
+    description = "Pull the change from the left window"
+  },{
+    "d3o",
+    description = "Pull the change from the right window"
+  },{
+    "<leader>gs",
+    description = "Open git status through Telescope"
+  },{
+    "<leader>gb",
+    description = "Open git branch through Telescope"
+  },{
+    "<leader>gh",
     description = "Open the file history of the current file"
   }, {
-    "<leader>do",
-    description = "Open the diff view panel"
-  }, {
-    "<leader>dc",
-    description = "Close the diff view panel or the file history panel"
+    "<leader>gc",
+    description = "Close the file history panel"
   },
   {
     "<leader>f",
