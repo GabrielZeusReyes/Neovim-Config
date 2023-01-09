@@ -82,9 +82,6 @@ keymap("v", "<leader>hg", "<cmd>Gitsigns stage_hunk<CR>", opts) -- Stage a hunk 
 keymap("n", "<leader>fgs", "<cmd>Telescope git_status<CR>", opts) -- Open git status through Telescope plugin
 keymap("n", "<leader>g", "<cmd>tab G<CR>", opts)
 keymap("n", "<leader>gh", "<cmd>Gllog -- %<CR>", opts)
---[[ keymap("n", "<leader>dh", "<cmd>DiffviewFileHistory %<CR>", opts) ]]
---[[ keymap("n", "<leader>do", "<cmd>DiffviewOpen<CR>", opts) ]]
---[[ keymap("n", "<leader>dc", "<cmd>DiffviewClose<CR>", opts) ]]
 
 -- Telescope --
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
