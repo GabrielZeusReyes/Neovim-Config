@@ -78,7 +78,12 @@ keymap("n", "<leader>ts", '<cmd>2ToggleTerm direction="horizontal"<CR>', opts) -
 keymap("n", "<leader>tt", '<cmd>ToggleTerm direction="horizontal"<CR><cmd>2ToggleTerm direction="horizontal"<CR>', opts) -- opens two terminals side by side
 
 -- GIT
-keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
+keymap("v", "<leader>hg", "<cmd>Gitsigns stage_hunk<CR>", opts)
+keymap("n", "<leader>g", "<cmd>tab G<CR>", opts)
+keymap("n", "<leader>gh", "<cmd>Gllog -- %<CR>", opts)
+--[[ keymap("n", "<leader>dh", "<cmd>DiffviewFileHistory %<CR>", opts) ]]
+--[[ keymap("n", "<leader>do", "<cmd>DiffviewOpen<CR>", opts) ]]
+--[[ keymap("n", "<leader>dc", "<cmd>DiffviewClose<CR>", opts) ]]
 
 -- Telescope --
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
