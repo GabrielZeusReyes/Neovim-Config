@@ -79,9 +79,6 @@ keymap("n", "<leader>tt", '<cmd>ToggleTerm direction="horizontal"<CR><cmd>2Toggl
 
 -- GIT
 keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
-keymap("n", "<leader>dh", "<cmd>DiffviewFileHistory %<CR>", opts)
-keymap("n", "<leader>do", "<cmd>DiffviewOpen<CR>", opts)
-keymap("n", "<leader>dc", "<cmd>DiffviewClose<CR>", opts)
 
 -- Telescope --
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
