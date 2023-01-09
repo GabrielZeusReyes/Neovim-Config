@@ -5,6 +5,14 @@ end
 
 local actions = require "telescope.actions"
 
+-- Auto wraps preview results
+vim.cmd [[
+  augroup telescope_preview_wrap
+    autocmd!
+    autocmd  User TelescopePreviewerLoaded setlocal wrap
+  augroup end
+]]
+
 telescope.setup {
   defaults = {
 
