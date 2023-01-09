@@ -31,7 +31,19 @@ local keymaps = {
   }, {
     "<C-\\>",
     description = "Toggle the terminal"
+  },{
+    "<leader>tf",
+    description = "Toggle the first terminal as a float"
   }, {
+    "<leader>th",
+    description = "Toggle the first terminal as horizontal direction"
+  },{
+    "<leader>ts",
+    description = "Toggle the second terminal on the side"
+  },{
+    "<leader>tt",
+    description = "Toggle two terminals side by side"
+  },{
     "<C-n>",
     description = "Open a new empty file"
   },{

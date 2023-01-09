@@ -71,11 +71,11 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Terminal --
 -- Better terminal navigation
--- This part is on the toggleterm.lua file
--- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+-- Other keymaps are in toggleterm.lua
+keymap("n", "<leader>tf", '<cmd>ToggleTerm direction="float"<CR>', opts) -- Make the first terminal's direction float
+keymap("n", "<leader>th", '<cmd>ToggleTerm direction="horizontal"<CR>', opts) -- Make the first terminal's direction horizontal 
+keymap("n", "<leader>ts", '<cmd>2ToggleTerm direction="horizontal"<CR>', opts) -- "Splits" the terminal -> opens up a second terminal side by side IF the first terminal is opened in horizontal/vertical direction
+keymap("n", "<leader>tt", '<cmd>ToggleTerm direction="horizontal"<CR><cmd>2ToggleTerm direction="horizontal"<CR>', opts) -- opens two terminals side by side
 
 -- GIT
 keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
