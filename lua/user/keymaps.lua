@@ -79,6 +79,7 @@ keymap("n", "<leader>tt", '<cmd>ToggleTerm direction="horizontal"<CR><cmd>2Toggl
 
 -- GIT
 keymap("v", "<leader>hg", "<cmd>Gitsigns stage_hunk<CR>", opts) -- Stage a hunk through git_signs plugin
+keymap("n", "<leader>fg", "<cmd>Telescope git_status<CR>", opts) -- Open git status through Telescope plugin
 keymap("n", "<leader>g", "<cmd>tab G<CR>", opts)
 keymap("n", "<leader>gh", "<cmd>Gllog -- %<CR>", opts)
 --[[ keymap("n", "<leader>dh", "<cmd>DiffviewFileHistory %<CR>", opts) ]]
