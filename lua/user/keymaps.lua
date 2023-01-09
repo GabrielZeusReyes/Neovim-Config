@@ -78,7 +78,7 @@ keymap("n", "<leader>ts", '<cmd>2ToggleTerm direction="horizontal"<CR>', opts) -
 keymap("n", "<leader>tt", '<cmd>ToggleTerm direction="horizontal"<CR><cmd>2ToggleTerm direction="horizontal"<CR>', opts) -- opens two terminals side by side
 
 -- GIT
-keymap("v", "<leader>hg", "<cmd>Gitsigns stage_hunk<CR>", opts)
+keymap("v", "<leader>hg", "<cmd>Gitsigns stage_hunk<CR>", opts) -- Stage a hunk through git_signs plugin
 keymap("n", "<leader>g", "<cmd>tab G<CR>", opts)
 keymap("n", "<leader>gh", "<cmd>Gllog -- %<CR>", opts)
 --[[ keymap("n", "<leader>dh", "<cmd>DiffviewFileHistory %<CR>", opts) ]]
