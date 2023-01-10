@@ -105,9 +105,12 @@ local keymaps = {
   },{
     "<leader>gh",
     description = "Open the file history of the current file"
-  }, {
+  },{
+    "<leader>gd",
+    description = "Open the file diff of the current file"
+  },{
     "<leader>gc",
-    description = "Close the file history panel"
+    description = "Close the diffview panels"
   },
   {
     "<leader>f",

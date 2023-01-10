@@ -86,6 +86,7 @@ keymap("n", "<leader>gm", "<cmd>Gvdiffsplit!<CR>", opts) -- Open merge conflict 
 keymap("n", "<leader>gs", "<cmd>Telescope git_status<CR>", opts) -- Open git status through Telescope plugin
 keymap("n", "<leader>gb", "<cmd>Telescope git_branches<CR>", opts) -- Open git branches through Telescope plugin
 --[[ keymap("n", "<leader>Gh", "<cmd>Gllog -- %<CR>", opts) -- Open commit logs that are related to the current file ]]
+keymap("n", "<leader>gd", "<cmd>DiffviewOpen<CR>", opts) -- Open the file diff through diff view
 keymap("n", "<leader>gh", "<cmd>DiffviewFileHistory %<CR>", opts) -- Open the file history through diff view
 keymap("n", "<leader>gc", "<cmd>DiffviewClose<CR>", opts) -- Close the diffview window
 
