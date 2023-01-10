@@ -41,11 +41,11 @@ vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
 local Terminal = require("toggleterm.terminal").Terminal
 -- added count = 5 here so that this doesn't override the first terminal when you have a long running task
---[[ local lazygit = Terminal:new({ cmd = "lazygit", count = 5, direction = "float", hidden = true }) ]]
+local lazygit = Terminal:new({ cmd = "lazygit", count = 5, direction = "float"})
 
---[[ function _LAZYGIT_TOGGLE() ]]
---[[ 	lazygit:toggle() ]]
---[[ end ]]
+function _LAZYGIT_TOGGLE()
+	lazygit:toggle()
+end
 
 local node = Terminal:new({ cmd = "node", hidden = true })
 
