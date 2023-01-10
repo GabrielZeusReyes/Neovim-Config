@@ -79,9 +79,8 @@ keymap("n", "<leader>tt", '<cmd>ToggleTerm direction="horizontal"<CR><cmd>2Toggl
 
 -- GIT
 --[[ keymap("v", "<leader>hg", "<cmd>Gitsigns stage_hunk<CR>", opts) -- Stage a hunk through git_signs plugin ]]
-keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts) -- Open lazygit in toggleterm
---[[ keymap("n", "<leader>g", '<cmd>5ToggleTerm direction="float"<CR>lazygit', opts) -- Open lazygit in toggleterm ]]
---[[ keymap("n", "<leader>g", "<cmd>tab G<CR>", opts) -- Open fugitive fullscreen ]]
+--[[ keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts) -- Open lazygit in toggleterm ]]
+keymap("n", "<leader>g", "<cmd>tab G<CR>", opts) -- Open fugitive fullscreen
 keymap("n", "<leader>gm", "<cmd>Gvdiffsplit!<CR>", opts) -- Open merge conflict through fugitive, use d2o or d3o for getting the update
 keymap("n", "<leader>gs", "<cmd>Telescope git_status<CR>", opts) -- Open git status through Telescope plugin
 keymap("n", "<leader>gb", "<cmd>Telescope git_branches<CR>", opts) -- Open git branches through Telescope plugin
