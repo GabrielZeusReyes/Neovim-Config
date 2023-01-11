@@ -66,25 +66,6 @@ local aya = {
   [[  ]],
 }
 
-local lol = {
-  [[  ]],
-  [[ ⢰⡟⣡⡟⣱⣿⡿⠡⢛⣋⣥⣴⣌⢿⣿⣿⣿⣿⣷⣌⠻⢿⣿⣿⣿⣿⣿⣿ ]],
-  [[ ⠏⢼⡿⣰⡿⠿⠡⠿⠿⢯⣉⠿⣿⣿⣿⣿⣿⣿⣷⣶⣿⣦⣍⠻⢿⣿⣿⣿ ]],
-  [[ ⣼⣷⢠⠀⠀⢠⣴⡖⠀⠀⠈⠻⣿⡿⣿⣿⣿⣿⣿⣛⣯⣝⣻⣿⣶⣿⣿⣿ ]],
-  [[ ⣿⡇⣿⡷⠂⠈⡉⠀⠀⠀⣠⣴⣾⣿⣿⣿⣿⣿⣍⡤⣤⣤⣤⡀⠀⠉⠛⠿ ]],
-  [[ ⣿⢸⣿⡅⣠⣬⣥⣤⣴⣴⣿⣿⢿⣿⣿⣿⣿⣿⣟⡭⡄⣀⣉⡀⠀⠀⠀⠀ ]],
-  [[ ⡟⣿⣿⢰⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣶⣦⣈⠀⠀⠀⢀⣶ ]],
-  [[ ⡧⣿⡇⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣾⣿ ]],
-  [[ ⡇⣿⠃⣿⣿⣿⣿⣿⠛⠛⢫⣿⣿⣻⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿ ]],
-  [[ ⡇⣿⠘⡇⢻⣿⣿⣿⡆⠀⠀⠀⠀⠈⠉⠙⠻⠏⠛⠻⣿⣿⣿⣿⣿⣭⡾⢁ ]],
-  [[ ⡇⣿⠀⠘⢿⣿⣿⣿⣧⢠⣤⠀⡤⢀⣠⣀⣀⠀⠀⣼⣿⣿⣿⣿⣿⠟⣁⠉ ]],
-  [[ ⣧⢻⠀⡄⠀⠹⣿⣿⣿⡸⣿⣾⡆⣿⣿⣿⠿⣡⣾⣿⣿⣿⣿⡿⠋⠐⢡⣶ ]],
-  [[ ⣿⡘⠈⣷⠀⠀⠈⠻⣿⣷⣎⠐⠿⢟⣋⣤⣾⣿⣿⣿⡿⠟⣩⠖⢠⡬⠈⠀ ]],
-  [[ ⣿⣧⠁⢻⡇⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⠿⠟⠋⠁⢀⠈⢀⡴⠈⠁⠀⠀ ]],
-  [[ ⠻⣿⣆⠘⣿⠀⠀  ⠀⠈⠙⠛⠋⠉⠀⠀⠀⠀⡀⠤⠚⠁      ]],
-  [[  ]],
-}
-
 local hydra = {
     [[]],
     [[   ⣴⣶⣤⡤⠦⣤⣀⣤⠆     ⣈⣭⣭⣿⣶⣿⣦⣼⣆         ]],
@@ -167,7 +148,41 @@ local title = {
   [[ ]],
 };
 
-dashboard.custom_header = aya
+local hello = {
+  [[ ]],
+  [[ ]],
+  [[ ]],
+  [[ ]],
+  [[ ██╗  ██╗███████╗██╗     ██╗      ██████╗ ██╗ ]],
+  [[ ██║  ██║██╔════╝██║     ██║     ██╔═══██╗██║ ]],
+  [[ ███████║█████╗  ██║     ██║     ██║   ██║██║ ]],
+  [[ ██╔══██║██╔══╝  ██║     ██║     ██║   ██║╚═╝ ]],
+  [[ ██║  ██║███████╗███████╗███████╗╚██████╔╝██╗ ]],
+  [[ ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝ ╚═╝ ]],
+  [[ ]],
+  [[ ]],
+}
+
+local cursiveHello = {
+  [[ ]],
+  [[ ]],
+  [[ ]],
+  [[ ]],
+  [[   ,ggg,        gg                                     ]],
+  [[ dP""Y8b       88           ,dPYb, ,dPYb,              ]],
+  [[ Yb, `88       88           IP'`Yb IP'`Yb              ]],
+  [[  `"  88       88           I8  8I I8  8I              ]],
+  [[      88aaaaaaa88           I8  8' I8  8'              ]],
+  [[      88"""""""88   ,ggg,   I8 dP  I8 dP    ,ggggg,    ]],
+  [[      88       88  i8" "8i  I8dP   I8dP    dP"  "Y8ggg ]],
+  [[      88       88  I8, ,8I  I8P    I8P    i8'    ,8I   ]],
+  [[      88       Y8, `YbadP' ,d8b,_ ,d8b,_ ,d8,   ,d8'   ]],
+  [[      88       `Y8888P"Y8888P'"Y888P'"Y88P"Y8888P"     ]],
+  [[ ]],
+  [[ ]],
+}
+
+dashboard.custom_header = cursiveHello
 
 dashboard.custom_center = {
   {
@@ -209,8 +224,13 @@ dashboard.custom_center = {
 }
 
 local currentHour = tonumber(os.date "%H")
-local welcomeMessage = "  Good night, "
-if currentHour < 5 and currentHour > 6 then
- welcomeMessage = "  Good morning, "
+print(currentHour)
+local welcomeMessage = "望  Good night, "
+if currentHour >= 5 and currentHour <= 12 then
+ welcomeMessage = "  Good morning, "
+elseif currentHour >= 13 and currentHour <= 18 then
+ welcomeMessage = "  Good afternoon, "
+elseif currentHour >= 19 and currentHour <= 21 then
+ welcomeMessage = "  Good evening, "
 end
 dashboard.custom_footer = {welcomeMessage .. 'Gabz'}
