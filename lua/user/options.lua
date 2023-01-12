@@ -45,6 +45,7 @@ local options = {
   foldlevel = 99, -- Using ufo provider need a large value, feel free to decrease the value
   foldlevelstart = -1,
   foldenable = true,
+  sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 }
 
 vim.opt.shortmess:append "c"

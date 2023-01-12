@@ -192,6 +192,12 @@ dashboard.custom_center = {
     shortcut = '<space> p'
   },
   {
+    icon = '  ',
+    desc = 'Sessions                              ',
+    action = 'Telescope session-lens search_session',
+    shortcut = '<space> s s'
+  },
+  {
     icon = '  ',
     desc = 'Find files                              ',
     action = 'Telescope find_files find_command=rg,--hidden,--files',
