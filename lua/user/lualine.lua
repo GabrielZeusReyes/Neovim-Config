@@ -7,6 +7,19 @@ local hide_in_width = function()
   return vim.fn.winwidth(0) > 80
 end
 
+-- colors *from tokyonight
+local colors = {
+  darkgray = "#16161d", -- font color of the github name
+  gray = "#cfc9c2", -- font color of other texts
+  transparent = nil, -- make the bg transparent
+  lightgrey = "#414868", -- bg color of the container for MODE and LOCATION
+  normal = "#73daca",
+  insert = "#bb9af7",
+  visual = "#ffa066",
+  replace = "#e46876",
+  command = "#9ece6a",
+}
+
 local diagnostics = {
   "diagnostics",
   sources = { "nvim_diagnostic" },
@@ -31,6 +44,13 @@ local mode = {
   --[[ end, ]]
   fmt = function(str)
     local firstLetter = str:sub(1, 1)
+    local modeEmojis = {
+      I = "🖋️",
+      N = "🤖",
+      C = "🖥️",
+      V = "🤿",
+      R = "🛠️"
+    }
     local modeIcons = {
       I = "",
       N = "",
@@ -38,7 +58,7 @@ local mode = {
       V = "",
       R = ""
     }
-    return modeIcons[firstLetter]
+    return modeEmojis[firstLetter]
   end,
   separator = { left = "", right = "" },
 }
@@ -67,7 +87,26 @@ local location = {
 local sessions = {
   require('auto-session-library').current_session_name,
   icons_enabled = true,
-  icon = "💾"
+  icon = "💾",
+  separator = {
+    left = "",
+    right = ""
+  }
+}
+
+local buffers = {
+  "buffers",
+  separator = { left = "", right = "" },
+  right_padding = 2,
+  symbols = { alternate_file = "" },
+  filetype_names = {
+    fugitive = "Fugitive",
+    DiffviewFileHistory = "File History"
+  },
+  buffers_color = {
+    active = { fg = colors.darkgray, bg = colors.transparent, gui = "bold" },     -- Color for active buffer.
+    inactive = { fg = colors.gray, bg = colors.lightgrey, gui = "bold" }, -- Color for inactive buffer.
+  },
 }
 
 -- cool function for progress
@@ -83,19 +122,6 @@ end
 local spaces = function()
   return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
-
--- colors *from tokyonight
-local colors = {
-  darkgray = "#16161d", -- font color of the github name
-  gray = "#cfc9c2", -- font color of other texts
-  transparent = nil, -- make the bg transparent
-  lightgrey = "#414868", -- bg color of the container for MODE and LOCATION
-  normal = "#73daca",
-  insert = "#bb9af7",
-  visual = "#ffa066",
-  replace = "#e46876",
-  command = "#9ece6a",
-}
 
 lualine.setup({
   options = {
@@ -140,7 +166,7 @@ lualine.setup({
   sections = {
     lualine_a = { mode },
     lualine_b = { branch },
-    lualine_c = { sessions, diagnostics },
+    lualine_c = { diagnostics },
     -- lualine_x = { "encoding", "fileformat", "filetype" },
     lualine_x = { diff, spaces, "encoding", filetype },
     lualine_y = { location },
@@ -166,21 +192,7 @@ lualine.setup({
     lualine_z = {},
   },
   tabline = {
-    lualine_a = {
-      {
-        "buffers",
-        separator = { left = "", right = "" },
-        right_padding = 2,
-        symbols = { alternate_file = "" },
-        filetype_names = {
-          fugitive = "Fugitive",
-          DiffviewFileHistory = "File History"
-        },
-        buffers_color = {
-          active = { fg = colors.darkgray, bg = colors.transparent, gui = "bold" },     -- Color for active buffer.
-          inactive = { fg = colors.gray, bg = colors.lightgrey, gui = "bold" }, -- Color for inactive buffer.
-        },
-      },
-    },
+    lualine_a = { buffers },
+    lualine_z = { sessions },
   },
 })
