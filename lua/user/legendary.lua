@@ -136,6 +136,10 @@ local keymaps = {
     mode = { 'v' }
   },
   {
+    "<leader>ss",
+    description = "Open Sessions",
+  },
+  {
     "gD",
     description = "LSP declaration",
   },{
