@@ -10,7 +10,7 @@ end
 
 autoSession.setup({
   log_level = "error",
-  auto_session_suppress_dirs = { "~/", "C:/Users/Gabriel" }, -- add here your home dir
+  auto_session_suppress_dirs = { "~/", "C:/Users/Gabriel", "C:/Users/JK90MO/Developer/ING" }, -- add here your home dir
   auto_session_use_git_branch = true
 })
 
