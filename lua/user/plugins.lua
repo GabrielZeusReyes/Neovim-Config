@@ -131,6 +131,13 @@ return packer.startup(function(use)
 
   -- Smooth Scrolling
   use 'karb94/neoscroll.nvim'
+  -- Scrollbar
+  use {
+    "petertriho/nvim-scrollbar",
+    config = function ()
+     require'scrollbar'.setup{}
+    end
+  }
 
   -- Startup screen
   use 'glepnir/dashboard-nvim'
@@ -144,7 +151,6 @@ return packer.startup(function(use)
     'rmagatti/session-lens',
     requires = {'rmagatti/auto-session', 'nvim-telescope/telescope.nvim'},
   }
-  --[[ use "jedrzejboczar/possession.nvim" ]]
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

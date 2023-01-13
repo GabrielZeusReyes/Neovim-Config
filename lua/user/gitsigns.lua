@@ -46,3 +46,5 @@ gitsigns.setup {
     enable = false,
   },
 }
+
+require("scrollbar.handlers.gitsigns").setup()
