@@ -135,7 +135,17 @@ return packer.startup(function(use)
   use {
     "petertriho/nvim-scrollbar",
     config = function ()
-     require'scrollbar'.setup{}
+     require'scrollbar'.setup{
+        excluded_filetypes = {
+          "fugitive",
+          "toggleterm",
+          "dashboard",
+          "NvimTree",
+          "Outline",
+          "spectre_panel",
+          "DiffviewFiles",
+        }
+    }
     end
   }
 
