@@ -42,18 +42,21 @@ end
 --[[ )) ]]
 
 -- Normal popup
-wilder.set_option('renderer', wilder.popupmenu_renderer({
-    pumblend = 10,
+wilder.set_option('renderer', wilder.popupmenu_renderer(
+  wilder.popupmenu_border_theme({
+    pumblend = 25,
     -- 'single', 'double', 'rounded' or 'solid'
     -- can also be a list of 8 characters, see :h wilder#popupmenu_palette_theme() for more details
     highlights = {
       gradient = gradient,
       border = 'Normal', -- highlight to use for the border
     },
+    border = "rounded",
     highlighter = wilder.highlighter_with_gradient({
       wilder.basic_highlighter(), -- or wilder.lua_fzy_highlighter(),
     }),
     left = {' ', wilder.popupmenu_devicons()},
     right = {' ', wilder.popupmenu_scrollbar()},
   })
+)
 )
