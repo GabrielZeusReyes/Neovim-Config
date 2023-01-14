@@ -135,27 +135,27 @@ lualine.setup({
       },
       visual = {
         a = { fg = colors.darkgray, bg = colors.visual, gui = "bold" },
-        b = { fg = colors.gray, bg = colors.lightgrey },
+        b = { fg = colors.visual, bg = colors.lightgrey },
         c = { fg = colors.gray, bg = colors.transparent },
       },
       replace = {
         a = { fg = colors.darkgray, bg = colors.replace, gui = "bold" },
-        b = { fg = colors.gray, bg = colors.lightgrey },
+        b = { fg = colors.replace, bg = colors.lightgrey },
         c = { fg = colors.gray, bg = colors.transparent },
       },
       normal = {
         a = { fg = colors.darkgray, bg = colors.normal, gui = "bold" },
-        b = { fg = colors.gray, bg = colors.lightgrey },
+        b = { fg = colors.normal, bg = colors.lightgrey },
         c = { fg = colors.gray, bg = colors.transparent },
       },
       insert = {
         a = { fg = colors.darkgray, bg = colors.insert, gui = "bold" },
-        b = { fg = colors.gray, bg = colors.lightgrey },
+        b = { fg = colors.insert, bg = colors.lightgrey },
         c = { fg = colors.gray, bg = colors.transparent },
       },
       command = {
         a = { fg = colors.darkgray, bg = colors.command, gui = "bold" },
-        b = { fg = colors.gray, bg = colors.lightgrey },
+        b = { fg = colors.command, bg = colors.lightgrey },
         c = { fg = colors.gray, bg = colors.transparent },
       },
     },
