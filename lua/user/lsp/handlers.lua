@@ -1,5 +1,3 @@
-local navic = require("nvim-navic")
-
 local M = {}
 
 -- TODO: backfill this to template
@@ -90,12 +88,11 @@ end
 M.on_attach = function(client, bufnr)
   -- this disables the tsserver and just use the null-ls formatter if the client is tserver
   if client.name == "tsserver" then
+    client.server_capabilities.documentFormattingProvider = false -- this basically makes sure that tsserver is always used if it's that client name instead of asking
+  end
+  if client.name == "sumneko_lua" then
     client.server_capabilities.documentFormattingProvider = false
-  end
-  if client.server_capabilities.documentSymbolProvider then
-      navic.attach(client, bufnr)
-  end
-  lsp_keymaps(bufnr)
+  end  lsp_keymaps(bufnr)
   lsp_highlight_document(client)
 end
 
