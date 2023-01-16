@@ -132,22 +132,22 @@ return packer.startup(function(use)
   -- Smooth Scrolling
   -- use 'karb94/neoscroll.nvim'
   -- Scrollbar
-  use {
-    "petertriho/nvim-scrollbar",
-    config = function ()
-     require'scrollbar'.setup{
-        excluded_filetypes = {
-          "fugitive",
-          "toggleterm",
-          "dashboard",
-          "NvimTree",
-          "Outline",
-          "spectre_panel",
-          "DiffviewFiles",
-        }
-    }
-    end
-  }
+  -- use {
+  --   "petertriho/nvim-scrollbar",
+  --   config = function ()
+  --    require'scrollbar'.setup{
+  --       excluded_filetypes = {
+  --         "fugitive",
+  --         "toggleterm",
+  --         "dashboard",
+  --         "NvimTree",
+  --         "Outline",
+  --         "spectre_panel",
+  --         "DiffviewFiles",
+  --       }
+  --   }
+  --   end
+  -- }
 
   -- Startup screen
   use 'glepnir/dashboard-nvim'
