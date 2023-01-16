@@ -91,11 +91,13 @@ local sessions = {
   separator = {
     left = "",
     right = ""
-  }
+  },
 }
 
 local buffers = {
   "buffers",
+  section_separators = { left = '', right = '' },
+  component_separators = { left = '', right = '' },
   separator = { left = "", right = "" },
   right_padding = 2,
   symbols = { alternate_file = "" },
@@ -135,27 +137,27 @@ lualine.setup({
       },
       visual = {
         a = { fg = colors.darkgray, bg = colors.visual, gui = "bold" },
-        b = { fg = colors.visual, bg = colors.lightgrey },
+        b = { fg = colors.gray, bg = colors.lightgrey },
         c = { fg = colors.gray, bg = colors.transparent },
       },
       replace = {
         a = { fg = colors.darkgray, bg = colors.replace, gui = "bold" },
-        b = { fg = colors.replace, bg = colors.lightgrey },
+        b = { fg = colors.gray, bg = colors.lightgrey },
         c = { fg = colors.gray, bg = colors.transparent },
       },
       normal = {
         a = { fg = colors.darkgray, bg = colors.normal, gui = "bold" },
-        b = { fg = colors.normal, bg = colors.lightgrey },
+        b = { fg = colors.gray, bg = colors.lightgrey },
         c = { fg = colors.gray, bg = colors.transparent },
       },
       insert = {
         a = { fg = colors.darkgray, bg = colors.insert, gui = "bold" },
-        b = { fg = colors.insert, bg = colors.lightgrey },
+        b = { fg = colors.gray, bg = colors.lightgrey },
         c = { fg = colors.gray, bg = colors.transparent },
       },
       command = {
         a = { fg = colors.darkgray, bg = colors.command, gui = "bold" },
-        b = { fg = colors.command, bg = colors.lightgrey },
+        b = { fg = colors.gray, bg = colors.lightgrey },
         c = { fg = colors.gray, bg = colors.transparent },
       },
     },
@@ -167,13 +169,13 @@ lualine.setup({
   sections = {
     lualine_a = { mode },
     lualine_b = { branch },
-    lualine_c = { diagnostics },
+    lualine_c = { diagnostics, sessions },
     -- lualine_x = { "encoding", "fileformat", "filetype" },
     lualine_x = { diff, spaces, "encoding", filetype },
     lualine_y = { location },
     lualine_z = {
       {
-        progress,
+        "progress",
         color = {
           fg = colors.lightgrey
         },
@@ -194,6 +196,6 @@ lualine.setup({
   },
   tabline = {
     lualine_a = { buffers },
-    lualine_z = { sessions },
+    lualine_z = {  },
   },
 })
