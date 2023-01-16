@@ -130,7 +130,7 @@ return packer.startup(function(use)
   }
 
   -- Smooth Scrolling
-  use 'karb94/neoscroll.nvim'
+  -- use 'karb94/neoscroll.nvim'
   -- Scrollbar
   use {
     "petertriho/nvim-scrollbar",
