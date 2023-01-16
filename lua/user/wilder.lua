@@ -60,3 +60,5 @@ wilder.set_option('renderer', wilder.popupmenu_renderer(
   })
 )
 )
+
+vim.api.nvim_set_hl(0, "Pmenu", { bg = "#000000"})
