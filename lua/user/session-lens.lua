@@ -16,7 +16,7 @@ autoSession.setup({
     "C:/Users/JK90MO",
     "C:/Users/JK90MO/Developer/ING",
   }, -- add here your home dir
-  auto_session_use_git_branch = true
+  -- auto_session_use_git_branch = true
 })
 
 sessionLens.setup({
