@@ -1,5 +1,5 @@
-require "options"
-require "keymaps"
+require "settings.options"
+require "settings.keymaps"
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
