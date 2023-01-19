@@ -39,6 +39,8 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<leader><leader>l", ":HopLineStart<CR>", opts)
 keymap("n", "<leader><leader>s", ":HopPattern<CR>", opts)
 keymap("n", "<leader><leader>o", ":HopChar2<CR>", opts)
+keymap("n", "<A-h>", "^", opts)
+keymap("n", "<A-l>", "$", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
