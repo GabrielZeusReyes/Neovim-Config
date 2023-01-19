@@ -1,27 +1,21 @@
-require "user.options"
-require "user.keymaps"
-require "user.plugins"
-require "user.colorscheme"
---[[ require "user.nvim-navic" ]]
-require "user.barbecue"
-require "user.cmp"
-require "user.lsp"
-require "user.telescope"
-require "user.treesitter"
-require "user.autopairs"
-require "user.comment"
-require "user.nvim-tree"
---[[ require "user.bufferline" ]]
-require "user.toggleterm"
-require "user.lualine"
-require "user.hop"
--- require "user.indentline"
-require "user.project"
-require "user.gitsigns"
--- require "user.neoscroll"
-require "user.dashboard-nvim"
-require "user.colorizer"
-require "user.ufo"
-require "user.wilder"
-require "user.legendary"
-require "user.session-lens"
+require "options"
+require "keymaps"
+
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+require("lazy").setup('plugins', {
+  ui = {
+    border = "rounded"
+  }
+})
