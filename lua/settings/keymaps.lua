@@ -112,3 +112,6 @@ keymap("v", "<leader>s", "<esc>:lua require('spectre').open_visual()<CR>", opts)
 
 -- Legendary
 keymap("n", "<leader>?", "<cmd>Legendary keymaps<CR>", opts)
+
+-- Sessions
+keymap("n", "<leader>ss", "<cmd>SearchSession<CR>", opts)
