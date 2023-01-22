@@ -75,6 +75,10 @@ local keymaps = {
     description = "Hop to any line start"
   },
   {
+    "<leader>ss",
+    description = "Open Sessions"
+  },
+  {
     "<leader><leader>s",
     description = "Hop to a pattern"
   }, {

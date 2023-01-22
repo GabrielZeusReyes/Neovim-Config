@@ -3,7 +3,7 @@ return {
   dependencies = {'rmagatti/auto-session', 'nvim-telescope/telescope.nvim'},
   config = function()
     require("session-lens").setup({
-      ath_display = {'shorten'},
+      path_display = {'shorten'},
       theme = "dropdown",
       theme_conf = {
         border = true

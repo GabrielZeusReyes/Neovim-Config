@@ -64,19 +64,16 @@ local location = {
   separator = { left = "" }
 }
 
---[[ local sessions = {
+local sessions = {
   require('auto-session-library').current_session_name,
   icons_enabled = true,
-  icon = "",
-  separator = {
-    left = "",
-    right = ""
-  },
-} ]]
+  icon = "",
+  padding = { left = 1, right = 1 },
+}
 
 local buffers = {
   "buffers",
-  -- section_separators = { left = '', right = '' },
+  -- section_separators = { right = '', left = '' },
   -- component_separators = { left = '▏', right = '▏' },
   separator = { left = "", right = "" },
   right_padding = 2,
@@ -117,7 +114,7 @@ lualine.setup({
   sections = {
     lualine_a = { mode },
     lualine_b = { branch },
-    lualine_c = { diagnostics },
+    lualine_c = { sessions, diagnostics },
     -- lualine_x = { "encoding", "fileformat", "filetype" },
     lualine_x = { diff, spaces, "encoding", filetype },
     lualine_y = { location },
@@ -141,7 +138,6 @@ lualine.setup({
   },
   tabline = {
     lualine_a = { buffers },
-    lualine_z = {  },
   },
 })
 
