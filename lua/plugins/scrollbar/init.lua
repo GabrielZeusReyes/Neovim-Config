@@ -1,8 +1,9 @@
 return {
   "petertriho/nvim-scrollbar",
   event = "BufReadPre",
-  dependences = {
-    "folke/tokyonight.nvim"
+  dependencies = {
+    "folke/tokyonight.nvim",
+    "kevinhwang91/nvim-hlslens",
   },
   config = function ()
     local colors = require("tokyonight.colors").setup()
@@ -29,5 +30,7 @@ return {
         "DiffviewFiles",
       }
     })
+
+    require("scrollbar.handlers.search").setup({})
   end
 }
