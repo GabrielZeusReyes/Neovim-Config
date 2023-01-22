@@ -9,7 +9,13 @@ return {
     "JoosepAlviste/nvim-ts-context-commentstring",
     "nvim-treesitter/nvim-treesitter-refactor",
     "nvim-treesitter/nvim-treesitter-textobjects",
-    "windwp/nvim-ts-autotag"
+    "windwp/nvim-ts-autotag",
+    {
+      "m-demare/hlargs.nvim",
+      config = function ()
+        require('hlargs').setup()
+      end
+    }
   },
   config = function()
     require "plugins.treesitter.config"
