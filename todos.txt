@@ -9,4 +9,4 @@
 9. Gitblame??
 10. https://github.com/mrjones2014/legendary.nvim - maybe use this for formatting our keybindings??
 11. Telescope for Git files
-12. undotree
+12. undotree -- main branch
