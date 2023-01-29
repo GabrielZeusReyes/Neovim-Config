@@ -13,6 +13,7 @@ null_ls.setup({
 	sources = {
 		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }), -- not sure if this will override your .prettierrc file??
 		formatting.stylua,
-    -- diagnostics.flake8
+    -- diagnostics.eslint,
+    -- formatting.eslint
 	},
 })
