@@ -8,7 +8,7 @@ local servers = {
   "cssls",
   "graphql",
   "html",
-  "quick_lint_js",
+  -- "quick_lint_js",
   "tsserver",
   "tailwindcss"
 }
