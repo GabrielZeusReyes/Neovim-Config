@@ -115,3 +115,6 @@ keymap("n", "<leader>?", "<cmd>Legendary keymaps<CR>", opts)
 
 -- Sessions
 keymap("n", "<leader>ss", "<cmd>SearchSession<CR>", opts)
+
+-- Lsp Lines Diagnostics
+keymap("", "<leader>l", "<cmd>lua require('lsp_lines').toggle()<CR>", opts)

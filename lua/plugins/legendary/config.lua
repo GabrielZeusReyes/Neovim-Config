@@ -71,6 +71,10 @@ local keymaps = {
     description = "Toggle NvimTree"
   },
   {
+    "<leader>l",
+    description = "Toggle LSP Lines"
+  },
+  {
     "<leader><leader>l",
     description = "Hop to any line start"
   },
