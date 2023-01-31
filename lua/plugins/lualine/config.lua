@@ -33,16 +33,16 @@ local mode = {
     local firstLetter = str:sub(1, 1)
     local modeIcons = {
       I = "",
-      N = "",
+      N = "",
       C = "",
       V = "",
       R = ""
     }
     return modeIcons[firstLetter]
   end,
-  separator = { left = "", right = "" },
+  separator = { --[[ left = "",  ]]right = "" },
 }
--- '' '' '' '' '' '' '' ''
+-- '' '' '' '' '' '' '' '' ''
 
 local filetype = {
   "filetype",
@@ -54,14 +54,14 @@ local branch = {
   "branch",
   icons_enabled = true,
   icon = "",
-  separator = { left = "", right = "" },
-  padding = { left = 2, right = 1 }
+  separator = { --[[ left = "", ]] right = "" },
+  padding = { left = 1, right = 1 }
 }
 
 local location = {
   "location",
   padding = { left = 0, right = 2 },
-  separator = { left = "" }
+  separator = { left = "" }
 }
 
 local sessions = {
@@ -73,9 +73,9 @@ local sessions = {
 
 local buffers = {
   "buffers",
-  -- section_separators = { right = '', left = '' },
+  section_separators = { left = '' },
   -- component_separators = { left = '▏', right = '▏' },
-  separator = { left = "", right = "" },
+  -- separator = { left = "", right = "" },
   right_padding = 2,
   symbols = { alternate_file = "" },
   filetype_names = {
@@ -122,8 +122,8 @@ lualine.setup({
       {
         progress,
         separator = {
-          left = "",
-          right = ""
+          left = "",
+          -- right = ""
         }
       }
     }
