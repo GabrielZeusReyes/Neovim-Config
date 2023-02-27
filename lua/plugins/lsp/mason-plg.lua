@@ -1,6 +1,6 @@
 -- add here if you found a language that doesn't have lsp
 local servers = {
-	"sumneko_lua",
+	"lua_ls",
 	"jsonls",
   "eslint",
   "emmet_ls",
@@ -8,9 +8,8 @@ local servers = {
   "cssls",
   "graphql",
   "html",
-  -- "quick_lint_js",
   "tsserver",
-  "tailwindcss"
+  "tailwindcss",
 }
 
 local settings = {
