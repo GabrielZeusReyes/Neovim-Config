@@ -90,7 +90,7 @@ M.on_attach = function(client, bufnr)
   if client.name == "tsserver" then
     client.server_capabilities.documentFormattingProvider = false -- this basically makes sure that tsserver is always used if it's that client name instead of asking
   end
-  if client.name == "sumneko_lua" then
+  if client.name == "lua_ls" then
     client.server_capabilities.documentFormattingProvider = false
   end
 
