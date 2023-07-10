@@ -39,13 +39,13 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<leader><leader>l", ":HopLineStart<CR>", opts)
 keymap("n", "<leader><leader>s", ":HopPattern<CR>", opts)
 keymap("n", "<leader><leader>o", ":HopChar2<CR>", opts)
-keymap("n", "<A-h>", "^", opts)
-keymap("n", "<A-l>", "$", opts)
+keymap("n", "<leader>h", "^", opts)
+keymap("n", "<leader>l", "$", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
-keymap("n", "<A-w>", ":Bdelete!<CR>", opts)
+keymap("n", "<S-c>", ":Bdelete!<CR>", opts) -- fix this
 --[[ keymap("n", "<A-w>", ":BufferClose<CR>", opts) ]]
 
 -- Insert --
@@ -117,4 +117,4 @@ keymap("n", "<leader>?", "<cmd>Legendary keymaps<CR>", opts)
 keymap("n", "<leader>ss", "<cmd>SearchSession<CR>", opts)
 
 -- Lsp Lines Diagnostics
-keymap("", "<leader>l", "<cmd>lua require('lsp_lines').toggle()<CR>", opts)
+-- keymap("", "<leader>l", "<cmd>lua require('lsp_lines').toggle()<CR>", opts)
