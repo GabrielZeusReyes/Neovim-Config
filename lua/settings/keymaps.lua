@@ -45,7 +45,7 @@ keymap("n", "<leader>l", "$", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
-keymap("n", "<S-c>", ":Bdelete!<CR>", opts) -- fix this
+keymap("n", "<leader>w", ":bdelete<CR>", opts) -- fix this
 --[[ keymap("n", "<A-w>", ":BufferClose<CR>", opts) ]]
 
 -- Insert --
