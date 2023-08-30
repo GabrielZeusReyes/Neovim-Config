@@ -146,7 +146,7 @@ local keymaps = {
     "gd",
     description = "LSP definition",
   },{
-    "gh",
+    "K",
     description = "LSP hover",
   },{
     "gi",
@@ -164,7 +164,10 @@ local keymaps = {
     "d]",
     description = "Move the next diagnostic",
   },
-
+  {
+    "<C-n>",
+    definition = "Start multi select",
+  }
 }
 
 legendary.setup({
