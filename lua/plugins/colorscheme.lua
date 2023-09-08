@@ -32,6 +32,11 @@ return {
       catpuccin.setup {
         flavour = "mocha",
         transparent_background = true,
+        integrations = {
+          -- ts_rainbow2 = true,
+          rainbow_delimiters = true,
+          harpoon = true,
+        }
       }
      vim.cmd([[colorscheme catppuccin]])
     end
