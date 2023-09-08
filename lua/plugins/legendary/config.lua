@@ -161,7 +161,16 @@ local keymaps = {
   },{
     "gr",
     description = "LSP references",
-  },{
+  },
+  {
+    "gl",
+    description = "LSP show diagnostics",
+  },
+  {
+    "F3",
+    description = "Format code in current buffer",
+  },
+  {
     "[d",
     description = "Move the previous diagnostic",
   },{
