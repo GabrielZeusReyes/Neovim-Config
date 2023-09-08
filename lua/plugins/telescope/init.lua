@@ -17,6 +17,12 @@ return {
         require("telescope").load_extension("ui-select")
       end
     },
+    {
+      'ThePrimeagen/harpoon',
+      config = function()
+        require("telescope").load_extension("harpoon")
+      end
+    },
     "nvim-lua/plenary.nvim",
   },
 }

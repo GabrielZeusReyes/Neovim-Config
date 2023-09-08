@@ -163,10 +163,32 @@ local keymaps = {
   },{
     "d]",
     description = "Move the next diagnostic",
+  },{
+    "<C-n>",
+    description = "Start multi select",
+  },{
+    "<A-h>",
+    description = "Open Harpoon",
   },
   {
-    "<C-n>",
-    definition = "Start multi select",
+    "<A-m>",
+    description = "Mark a file for Harpoon",
+  },
+  {
+    "<A-1>",
+    description = "Open the first marked file",
+  },
+  {
+    "<A-2>",
+    description = "Open the second marked file",
+  },
+  {
+    "<A-2>",
+    description = "Open the third marked file",
+  },
+  {
+    "<A-3>",
+    description = "Open the fourth marked file",
   }
 }
 

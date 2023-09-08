@@ -118,3 +118,11 @@ keymap("n", "<leader>ss", "<cmd>SearchSession<CR>", opts)
 
 -- Lsp Lines Diagnostics
 -- keymap("", "<leader>l", "<cmd>lua require('lsp_lines').toggle()<CR>", opts)
+
+-- Harpoon
+keymap("n", "<A-h>", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>", opts)
+keymap("n", "<A-m>", "<cmd>lua require('harpoon.mark').add_file()<CR>", opts)
+keymap("n", "<A-1>", "<cmd>lua require('harpoon.ui').nav_file(1)<CR>", opts)
+keymap("n", "<A-2>", "<cmd>lua require('harpoon.ui').nav_file(2)<CR>", opts)
+keymap("n", "<A-3>", "<cmd>lua require('harpoon.ui').nav_file(3)<CR>", opts)
+keymap("n", "<A-4>", "<cmd>lua require('harpoon.ui').nav_file(4)<CR>", opts)
