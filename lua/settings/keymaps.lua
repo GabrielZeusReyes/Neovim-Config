@@ -46,6 +46,7 @@ keymap("n", "<leader>l", "$", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>w", ":bdelete<CR>", opts) -- fix this
+keymap("n", "<A-w>", ":bd<CR>", opts)
 --[[ keymap("n", "<A-w>", ":BufferClose<CR>", opts) ]]
 
 -- Insert --
