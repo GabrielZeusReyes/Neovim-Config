@@ -140,6 +140,10 @@ local keymaps = {
     mode = { 'v' }
   },
   {
+    "<leader>b",
+    description = "Open a list of buffers"
+  },
+  {
     "gD",
     description = "LSP declaration",
   },{
