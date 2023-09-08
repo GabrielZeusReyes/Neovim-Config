@@ -58,10 +58,10 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Move text up and down
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
-keymap("n", "<A-j>", ":m .+1<CR>==", opts)
-keymap("n", "<A-k>", ":m .-2<CR>==", opts)
+-- keymap("v", "<Option-j>", ":m .+1<CR>==", opts)
+-- keymap("v", "<Option-k>", ":m .-2<CR>==", opts)
+-- keymap("n", "<Option-j>", ":m .+1<CR>==", opts)
+-- keymap("n", "<Option-k>", ":m .-2<CR>==", opts)
 
 -- Hold on to what was pasted
 keymap("v", "p", '"_dP', opts)
