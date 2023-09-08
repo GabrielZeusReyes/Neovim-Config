@@ -101,3 +101,11 @@ configs.setup {
 }
 
 configs.compilers = { 'gcc' }
+
+require 'rainbow-delimiters.setup' {
+  query = {
+    [''] = 'rainbow-delimiters',
+    lua = 'rainbow-blocks',
+    javascript = 'rainbow-delimiters-react',
+  },
+}
