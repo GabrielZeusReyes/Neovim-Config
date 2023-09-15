@@ -26,13 +26,13 @@ configs.setup {
   },
   indent = { enable = true, disable = { "yaml" } },
   rainbow = {
-    enable = false,
-    -- enable = true,
-    -- disable = { "html" }, -- list of languages you want to disable the plugin for
-    -- extended_mode = false, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
-    -- max_file_lines = 2000, -- Do not enable for files with more than n lines, int
-    -- colors = {}, -- table of hex strings
-    -- termcolors = {} -- table of colour name strings
+    -- enable = false,
+    enable = true,
+    disable = { "html" }, -- list of languages you want to disable the plugin for
+    extended_mode = false, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+    max_file_lines = 2000, -- Do not enable for files with more than n lines, int
+    colors = {}, -- table of hex strings
+    termcolors = {} -- table of colour name strings
   },
   context_commentstring = {
     enable = true,
@@ -102,10 +102,10 @@ configs.setup {
 
 configs.compilers = { 'gcc' }
 
-require 'rainbow-delimiters.setup' {
-  query = {
-    [''] = 'rainbow-delimiters',
-    lua = 'rainbow-blocks',
-    javascript = 'rainbow-delimiters-react',
-  },
-}
+-- require 'rainbow-delimiters.setup' {
+--   query = {
+--     [''] = 'rainbow-delimiters',
+--     lua = 'rainbow-blocks',
+--     javascript = 'rainbow-delimiters-react',
+--   },
+-- }
