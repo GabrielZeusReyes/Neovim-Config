@@ -35,6 +35,7 @@ return {
         integrations = {
           -- ts_rainbow2 = true,
           rainbow_delimiters = true,
+          nvimtree = true,
           harpoon = true,
         }
       }

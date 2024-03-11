@@ -202,6 +202,10 @@ local keymaps = {
   {
     "<A-3>",
     description = "Open the fourth marked file",
+  },
+  {
+    "<C-_>",
+    description = "Remove search results",
   }
 }
 

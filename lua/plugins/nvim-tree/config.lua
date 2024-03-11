@@ -99,6 +99,8 @@ local function on_attach(bufnr)
 
 end
 
+local HEIGHT_RATIO = 0.8 -- You can change this
+local WIDTH_RATIO = 0.5  -- You can change this too
 
 -- empty setup using defaults
 require("nvim-tree").setup(
@@ -124,16 +126,39 @@ require("nvim-tree").setup(
       timeout = 500,
     },
     view = {
-      width = 30,
-      hide_root_folder = false,
-      side = "left",
+      -- width = 30,
+      -- hide_root_folder = false,
+      -- side = "left",
       number = false,
       relativenumber = false,
       float = {
-        open_win_config = {
-          height = 30
-        }
-      }
+        enable = true,
+        open_win_config = function()
+          local screen_w = vim.opt.columns:get()
+          local screen_h = vim.opt.lines:get() - vim.opt.cmdheight:get()
+          local window_w = screen_w * WIDTH_RATIO
+          local window_h = screen_h * HEIGHT_RATIO
+          local window_w_int = math.floor(window_w)
+          local window_h_int = math.floor(window_h)
+          local center_x = (screen_w - window_w) / 2
+          local center_y = ((vim.opt.lines:get() - window_h) / 2)
+          - vim.opt.cmdheight:get()
+          return {
+            border = "rounded",
+            relative = "editor",
+            row = center_y,
+            col = center_x,
+            width = window_w_int,
+            height = window_h_int,
+          }
+        end,
+        -- open_win_config = {
+        --   height = 30
+        -- }
+      },
+      width = function()
+        return math.floor(vim.opt.columns:get() * WIDTH_RATIO)
+      end,
     },
     actions = {
       open_file = {
@@ -149,7 +174,7 @@ require("nvim-tree").setup(
         show = {
           file = true,
           folder = true,
-          folder_arrow = true,
+          folder_arrow = false,
           git = true,
         },
         glyphs = {

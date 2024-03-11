@@ -19,3 +19,4 @@ require("lazy").setup('plugins', {
     border = "rounded"
   }
 })
+

@@ -33,7 +33,7 @@ local options = {
   linebreak = true,                       -- companion to wrap, don't split words
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
-  guifont = "monospace:h17",               -- the font used in graphical neovim applications
+  guifont = "Courier New:h16",               -- the font used in graphical neovim applications
   winbar = "%{%v:lua.require'nvim-navic'.get_location()%}",
   shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
   shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait",
