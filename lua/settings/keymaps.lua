@@ -28,9 +28,8 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- Searc
 keymap("n", "<C-_>", ":nohl<CR>", opts)
 
--- Nvimtree
--- To see the default mappings, type :help nvim-tree-default-mappings
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+-- Oil
+keymap("n", "-", "<CMD>Oil<CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -81,14 +80,13 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Better terminal navigation
 -- Other keymaps are in toggleterm.lua
 keymap("n", "<leader>tf", '<cmd>ToggleTerm direction="float"<CR>', opts) -- Make the first terminal's direction float
-keymap("n", "<leader>th", '<cmd>ToggleTerm direction="horizontal"<CR>', opts) -- Make the first terminal's direction horizontal 
+keymap("n", "<leader>th", '<cmd>ToggleTerm direction="horizontal"<CR>', opts) -- Make the first terminal's direction horizontal
 keymap("n", "<leader>ts", '<cmd>2ToggleTerm direction="horizontal"<CR>', opts) -- "Splits" the terminal -> opens up a second terminal side by side IF the first terminal is opened in horizontal/vertical direction
 keymap("n", "<leader>tt", '<cmd>ToggleTerm direction="horizontal"<CR><cmd>2ToggleTerm direction="horizontal"<CR>', opts) -- opens two terminals side by side
 
 -- GIT
 --[[ keymap("v", "<leader>hg", "<cmd>Gitsigns stage_hunk<CR>", opts) -- Stage a hunk through git_signs plugin ]]
 --[[ keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts) -- Open lazygit in toggleterm ]]
-keymap("n", "<leader>g", "<cmd>tab G<CR>", opts) -- Open fugitive fullscreen
 keymap("n", "<leader>gm", "<cmd>Gvdiffsplit!<CR>", opts) -- Open merge conflict through fugitive, use d2o or d3o for getting the update
 keymap("n", "<leader>gs", "<cmd>Telescope git_status<CR>", opts) -- Open git status through Telescope plugin
 keymap("n", "<leader>gb", "<cmd>Telescope git_branches<CR>", opts) -- Open git branches through Telescope plugin
@@ -123,11 +121,3 @@ keymap("n", "<leader>ss", "<cmd>SearchSession<CR>", opts)
 
 -- Lsp Lines Diagnostics
 -- keymap("", "<leader>l", "<cmd>lua require('lsp_lines').toggle()<CR>", opts)
-
--- Harpoon
-keymap("n", "<A-h>", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>", opts)
-keymap("n", "<A-m>", "<cmd>lua require('harpoon.mark').add_file()<CR>", opts)
-keymap("n", "<A-1>", "<cmd>lua require('harpoon.ui').nav_file(1)<CR>", opts)
-keymap("n", "<A-2>", "<cmd>lua require('harpoon.ui').nav_file(2)<CR>", opts)
-keymap("n", "<A-3>", "<cmd>lua require('harpoon.ui').nav_file(3)<CR>", opts)
-keymap("n", "<A-4>", "<cmd>lua require('harpoon.ui').nav_file(4)<CR>", opts)

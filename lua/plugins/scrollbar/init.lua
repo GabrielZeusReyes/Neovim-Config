@@ -28,6 +28,7 @@ return {
         "Outline",
         "spectre_panel",
         "DiffviewFiles",
+        "oil",
       }
     })
 

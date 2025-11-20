@@ -33,7 +33,7 @@ local mode = {
     local firstLetter = str:sub(1, 1)
     local modeIcons = {
       I = "",
-      N = "",
+      N = "",
       C = "",
       V = "",
       R = ""
@@ -101,7 +101,7 @@ lualine.setup({
     theme = "catppuccin",
     component_separators = { left = "", right = "" },
     section_separators = { left = "", right = "" },
-    disabled_filetypes = { "fugitive", "toggleterm", "dashboard", "NvimTree", "Outline", "spectre_panel", "DiffviewFiles"},
+    disabled_filetypes = { "fugitive", "toggleterm", "dashboard", "NvimTree", "Outline", "spectre_panel", "DiffviewFiles", "oil" },
     always_divide_middle = true,
   },
   sections = {

@@ -1,23 +1,29 @@
 return {
-  "nvim-telescope/telescope.nvim",
-  tag = '0.1.2',
-  dependencies = {
-    {
-      'nvim-telescope/telescope-fzf-native.nvim', -- if this doesn't work, try commenting it out first, run Lazy, clean this package, then install it again
-      build = 'make',
-      config = function()
-        require('telescope').load_extension('fzf')
-      end
-    },
-    {
-      'ThePrimeagen/harpoon',
-      config = function()
-        require("telescope").load_extension("harpoon")
-      end
-    },
-    "nvim-lua/plenary.nvim",
-  },
-  config = function ()
-    require "plugins.telescope.config"
-  end,
+	"nvim-telescope/telescope.nvim",
+	tag = "0.1.6",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		{
+			"nvim-telescope/telescope-fzf-native.nvim",
+			build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
+		},
+		{
+			"cbochs/grapple.nvim",
+			opts = {
+				scope = "git", -- also try out "git_branch"
+			},
+			keys = {
+				{ "<leader>m", "<cmd>Grapple toggle<cr>", desc = "Tag a file" },
+				{ "<leader>g", "<cmd>Grapple toggle_tags<cr>", desc = "Toggle tags menu" },
+
+				{ "<leader>1", "<cmd>Grapple select index=1<cr>", desc = "Select first tag" },
+				{ "<leader>2", "<cmd>Grapple select index=2<cr>", desc = "Select second tag" },
+				{ "<leader>3", "<cmd>Grapple select index=3<cr>", desc = "Select third tag" },
+				{ "<leader>4", "<cmd>Grapple select index=4<cr>", desc = "Select fourth tag" },
+			},
+		},
+	},
+	config = function()
+		require("plugins.telescope.config")
+	end,
 }
